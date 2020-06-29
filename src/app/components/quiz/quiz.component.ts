@@ -24,15 +24,16 @@ export class QuizComponent implements OnInit {
     const id = parseInt(this.route.snapshot.paramMap.get('id'), 10);
     this.apiService.fetchQuiz(id).subscribe(value => {
       this.subtitle = value.description;
-      this.questions = value.questions;const q = this.question;
-      const answers = q.otherAnswers.concat(q.correctAnswer);
-      this.answers = ArrayUtil.shuffle(answers);
+      this.questions = value.questions;
     });
   }
 
   next(): void {
     this.activeIndex++;
     console.log(this.activeIndex);
+    const q = this.question;
+    const answers = q.otherAnswers.concat(q.correctAnswer);
+    this.answers = ArrayUtil.shuffle(answers);
   }
 
   exit(): void {
