@@ -10,10 +10,14 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { QuizComponent } from './components/quiz/quiz.component';
+import { MainComponent } from './components/main/main.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    QuizComponent,
+    MainComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,21 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span class="center">{{title}}</span>
+  </mat-toolbar-row>
+</mat-toolbar>
+<main class="mat-typography">
+  <ng-container *ngIf="!question && activeIndex < 0">
+    <h3>{{subtitle}}</h3>
+    <button mat-raised-button color="primary" (click)="next()">Starten</button>
+  </ng-container>
+  <ng-container *ngIf="question">
+    <h3>{{question.text}}</h3>
+    <img alt="" src="{{question.imageUrl}}" />
+    <div *ngFor="let answer of answers">
+      <button mat-stroked-button color="primary" (click)="next()">{{answer.text}}</button>
+    </div>
+  </ng-container>
+  <ng-container *ngIf="!question && activeIndex >= 0">
+    <button mat-raised-button color="primary" (click)="exit()">Beenden</button>
+  </ng-container>
+</main>

@@ -1,29 +1,8 @@
-import {Component, OnInit} from '@angular/core';
-import {ApiService} from './services/api.service';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit {
-  title = 'quizzmo';
-  items: any[];
-  constructor(private apiService: ApiService) {}
-
-  ngOnInit(): void {
-    console.log(this.title);
-    this.fetchData();
-  }
-
-  private fetchData(): void {
-    this.apiService.fetch().subscribe(
-      (data) => {
-        this.items = data;
-        console.log(data);
-      }, (err) => {
-        console.log(err);
-      }
-    );
-  }
-}
+export class AppComponent {}

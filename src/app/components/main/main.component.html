@@ -1,0 +1,13 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span class="center">{{title}}</span>
+  </mat-toolbar-row>
+</mat-toolbar>
+<main>
+  <mat-card *ngFor="let quiz of items" (click)="goToQuiz(quiz)">
+    <mat-card-title>{{quiz.name}}</mat-card-title>
+    <mat-card-content>
+      {{quiz.description}}
+    </mat-card-content>
+  </mat-card>
+</main>
