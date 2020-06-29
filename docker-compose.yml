@@ -1,0 +1,9 @@
+version: '3'
+services:
+  nginx:
+    image: nginx:latest
+    container_name: quizzmo_production
+    volumes:
+      - ./dist/quizzmo:/usr/share/nginx/html:ro
+    ports:
+      - 8088:80
