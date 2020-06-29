@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
+import {Observable} from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -7,4 +8,8 @@ import {HttpClient} from '@angular/common/http';
 export class ApiService {
 
   constructor(private httpClient: HttpClient) { }
+
+  fetch(): Observable<any> {
+    return this.httpClient.get('https://www.techiediaries.com/api/data.json');
+  }
 }
