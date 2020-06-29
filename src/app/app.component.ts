@@ -8,6 +8,7 @@ import {ApiService} from './services/api.service';
 })
 export class AppComponent implements OnInit {
   title = 'quizzmo';
+  items: any[];
   constructor(private apiService: ApiService) {}
 
   ngOnInit(): void {
@@ -18,6 +19,7 @@ export class AppComponent implements OnInit {
   private fetchData(): void {
     this.apiService.fetch().subscribe(
       (data) => {
+        this.items = data;
         console.log(data);
       }, (err) => {
         console.log(err);
