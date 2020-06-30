@@ -1,6 +1,6 @@
-<mat-toolbar color="primary">
+<mat-toolbar color="primary" (click)="exit()">
   <mat-toolbar-row>
-    <span class="center">{{title}}</span>
+    <span class="arrow arrow--left arrow--margin-right"></span><span class="center">{{title}}</span>
   </mat-toolbar-row>
 </mat-toolbar>
 <main class="mat-typography">
@@ -11,12 +11,30 @@
   <ng-container *ngIf="question">
     <div *ngIf="question.imageUrl" class="image" [style.backgroundImage]="'url('+ question.imageUrl +')'"></div>
     <h3 class="question">{{question.text}}</h3>
-    <div *ngFor="let answer of answers">
-      <button mat-stroked-button color="primary" (click)="select(answer)">{{answer.text}}</button>
-    </div>
+    <ng-container *ngIf="shown">
+      <div *ngFor="let answer of answers">
+        <button mat-stroked-button color="primary" (click)="select(answer)">{{answer.text}}</button>
+      </div>
+    </ng-container>
+    <ng-container *ngIf="!shown">
+      <mat-form-field class="input">
+        <mat-label>Freitextantwort</mat-label>
+        <label>
+          <input matInput [(ngModel)]="answer" (keydown.enter)="giveAnswer()">
+        </label>
+      </mat-form-field>
+      <div>
+        <button mat-raised-button color="primary" (click)="giveAnswer()">Antworten</button>
+      </div>
+      <div>
+        <button mat-raised-button (click)="show()">Antwortmöglichkeiten</button>
+      </div>
+    </ng-container>
   </ng-container>
+
   <ng-container *ngIf="!question && activeIndex >= 0">
     <h3>Du hast {{correctAnswers}} von {{questions.length}} Fragen richtig beantwortet.</h3>
+    <h3>Du hast {{bonusAnswers}} von {{questions.length}} Fragen im Freitext beantwortet.</h3>
     <button mat-raised-button color="primary" (click)="exit()">Beenden</button>
   </ng-container>
 </main>

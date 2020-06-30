@@ -3,5 +3,10 @@
     "id": 1,
     "name": "Nachrichtensprecher",
     "description": "Kennst du die Nachrichtensprecher der ARD?"
+  },
+  {
+    "id": 2,
+    "name": "Bundesregierung",
+    "description": "Kennst du die Bundesregierung der Bundesrepublik Deutschland?"
   }
 ]

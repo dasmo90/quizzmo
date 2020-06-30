@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {ApiService} from '../../services/api.service';
 import {Router} from '@angular/router';
-import {QuizTeaser} from '../../api/quiz-teaser';
-import {Quiz} from '../../api/quiz';
+import {QuizTeaser} from '../../models/quiz-teaser.model';
+import {Quiz} from '../../models/quiz.model';
 
 @Component({
   selector: 'app-main',
@@ -19,7 +19,7 @@ export class MainComponent implements OnInit {
     this.fetchData();
   }
 
-  goToQuiz(quiz: Quiz): void {
+  goToQuiz(quiz: QuizTeaser): void {
     this.router.navigate(['/quiz', {id: quiz.id, title: quiz.name}]);
   }
 

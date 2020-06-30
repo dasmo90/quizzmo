@@ -4,10 +4,10 @@
   </mat-toolbar-row>
 </mat-toolbar>
 <main>
-  <mat-card *ngFor="let quiz of items" (click)="goToQuiz(quiz)">
-    <mat-card-title>{{quiz.name}}</mat-card-title>
-    <mat-card-content>
+  <div *ngFor="let quiz of items" (click)="goToQuiz(quiz)" class="card">
+    <h3>{{quiz.name}}</h3>
+    <p>
       {{quiz.description}}
-    </mat-card-content>
-  </mat-card>
+    </p>
+  </div>
 </main>

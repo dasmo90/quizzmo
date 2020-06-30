@@ -12,10 +12,36 @@ main {
   background-repeat: no-repeat;
 }
 
+button {
+  width: 200px;
+  white-space: normal;
+}
+
 .question {
   margin-top: 10px;
+}
+
+.input {
+  width: 100%;
 }
 
 button {
   margin-top: 10px;
 }
+
+.arrow {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+
+  &--left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+
+  &--margin-right {
+    margin-right: 8px;
+  }
+}
+

@@ -1,0 +1,103 @@
+{
+  "description": "Kennst du die Bundesregierung der Bundesrepublik Deutschland?",
+  "id": 2,
+  "name": "Bundesregierung",
+  "questions": [
+    {
+      "text": "Wer ist zuständig für das Amt/Ressort: Familie, Senioren, Frauen und Jugend?",
+      "correctAnswer": {
+        "text": "Franziska Giffey (SPD)"
+      }
+    },
+    {
+      "text": "Wer ist zuständig für das Amt/Ressort: Gesundheit?",
+      "correctAnswer": {
+        "text": "Jens Spahn (CDU)"
+      }
+    },
+    {
+      "text": "Wer ist zuständig für das Amt/Ressort: Inneres, für Bau und Heimat?",
+      "correctAnswer": {
+        "text": "Horst Seehofer (CSU)"
+      }
+    },
+    {
+      "text": "Wer ist zuständig für das Amt/Ressort: Umwelt, Naturschutz und nukleare Sicherheit?",
+      "correctAnswer": {
+        "text": "Svenja Schulzer (SPD)"
+      }
+    },
+    {
+      "text": "Wer ist zuständig für das Amt/Ressort: Finanzen?",
+      "correctAnswer": {
+        "text": "Olaf Scholz (SPD)"
+      }
+    },
+    {
+      "text": "Wer ist zuständig für das Amt/Ressort: Justiz und Verbraucherschutz?",
+      "correctAnswer": {
+        "text": "Christine Lambrecht (SPD)"
+      }
+    },
+    {
+      "text": "Wer ist zuständig für das Amt/Ressort: Verteidigung?",
+      "correctAnswer": {
+        "text": "Annegret Kramp-Karrenbauer (CDU)"
+      }
+    },
+    {
+      "text": "Wer ist zuständig für das Amt/Ressort: Arbeit und Soziales?",
+      "correctAnswer": {
+        "text": "Hubertus Heil (SPD)"
+      }
+    },
+    {
+      "text": "Wer ist zuständig für das Amt/Ressort: Bundeskanzler/in?",
+      "correctAnswer": {
+        "text": "Angela Merkel (CDU)"
+      }
+    },
+    {
+      "text": "Wer ist zuständig für das Amt/Ressort: Auswärtiges Amt?",
+      "correctAnswer": {
+        "text": "Heiko Maas (SPD)"
+      }
+    },
+    {
+      "text": "Wer ist zuständig für das Amt/Ressort: Wirtschaft und Energie?",
+      "correctAnswer": {
+        "text": "Peter Altmaier (CDU)"
+      }
+    },
+    {
+      "text": "Wer ist zuständig für das Amt/Ressort: Verkehr und digitale Infrastruktur?",
+      "correctAnswer": {
+        "text": "Andreas Scheuer (CSU)"
+      }
+    },
+    {
+      "text": "Wer ist zuständig für das Amt/Ressort: Ernährung und Landwirtschaft?",
+      "correctAnswer": {
+        "text": "Julia Klöckner (CDU)"
+      }
+    },
+    {
+      "text": "Wer ist zuständig für das Amt/Ressort: Bildung und Forschung?",
+      "correctAnswer": {
+        "text": "Anja Karliczek (CDU)"
+      }
+    },
+    {
+      "text": "Wer ist zuständig für das Amt/Ressort: Wirtschaftliche Zusammenarbeit und Entwicklung?",
+      "correctAnswer": {
+        "text": "Gerd Müller (CSU)"
+      }
+    },
+    {
+      "text": "Wer ist zuständig für das Amt/Ressort: Bundesminister für besondere Aufgaben?",
+      "correctAnswer": {
+        "text": "Helge Braun (CDU)"
+      }
+    }
+  ]
+}
