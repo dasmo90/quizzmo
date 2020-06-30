@@ -9,13 +9,14 @@
     <button mat-raised-button color="primary" (click)="next()">Starten</button>
   </ng-container>
   <ng-container *ngIf="question">
-    <h3>{{question.text}}</h3>
-    <img alt="" src="{{question.imageUrl}}" />
+    <div *ngIf="question.imageUrl" class="image" [style.backgroundImage]="'url('+ question.imageUrl +')'"></div>
+    <h3 class="question">{{question.text}}</h3>
     <div *ngFor="let answer of answers">
-      <button mat-stroked-button color="primary" (click)="next()">{{answer.text}}</button>
+      <button mat-stroked-button color="primary" (click)="select(answer)">{{answer.text}}</button>
     </div>
   </ng-container>
   <ng-container *ngIf="!question && activeIndex >= 0">
+    <h3>Du hast {{correctAnswers}} von {{questions.length}} Fragen richtig beantwortet.</h3>
     <button mat-raised-button color="primary" (click)="exit()">Beenden</button>
   </ng-container>
 </main>

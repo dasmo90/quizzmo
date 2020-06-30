@@ -1,8 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
 import {ApiService} from '../../services/api.service';
-import {Question} from '../../api/Question';
-import {Answer} from '../../api/Answer';
+import {Question} from '../../api/question';
+import {Answer} from '../../api/answer';
 import {ArrayUtil} from '../../utils/array.util';
 
 @Component({
@@ -16,6 +16,7 @@ export class QuizComponent implements OnInit {
   activeIndex = -1;
   questions: Question[] = [];
   answers: Answer[] = [];
+  correctAnswers = 0;
 
   constructor(private apiService: ApiService, private route: ActivatedRoute, private router: Router) { }
 
@@ -30,10 +31,19 @@ export class QuizComponent implements OnInit {
 
   next(): void {
     this.activeIndex++;
-    console.log(this.activeIndex);
-    const q = this.question;
-    const answers = q.otherAnswers.concat(q.correctAnswer);
-    this.answers = ArrayUtil.shuffle(answers);
+    const question = this.question;
+    if (question) {
+      const answers = question.otherAnswers.concat(question.correctAnswer);
+      this.answers = ArrayUtil.shuffle(answers);
+    }
+  }
+
+  select(answer: Answer): void {
+    const question = this.question;
+    if (answer.text === question.correctAnswer.text) {
+      this.correctAnswers++;
+    }
+    this.next();
   }
 
   exit(): void {

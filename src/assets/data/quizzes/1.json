@@ -1,0 +1,154 @@
+{
+  "description": "Kennst du die Nachrichtensprecher der ARD?",
+  "id": 1,
+  "name": "Nachrichtensprecher",
+  "questions": [
+    {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/13/Jan_Hofer_1.jpg",
+      "text": "Dieser Sprecher ist seit 1985 bei der Tagesschau.",
+      "correctAnswer": {
+        "text": "Jan Hofer"
+      },
+      "otherAnswers": [
+        {
+          "text": "Jens Riewa"
+        },
+        {
+          "text": "Thorsten Schröder"
+        },
+        {
+          "text": "Tim Berendonk"
+        },
+        {
+          "text": "Ralph Baudach"
+        }
+      ]
+    },
+    {
+      "correctAnswer": {
+        "text": "Judith Rakers"
+      },
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/32/Maischberger_-_2018-01-24-1902.jpg",
+      "otherAnswers": [
+        {
+          "text": "Susanne Daubner"
+        },
+        {
+          "text": "Linda Zervakis"
+        },
+        {
+          "text": "Karolin Kandler"
+        },
+        {
+          "text": "Susanne Holst"
+        }
+      ],
+      "text": "Diese Sprecherin ist seit 2005 bei der Tagesschau."
+    },
+    {
+      "correctAnswer": {
+        "text": "Thorsten Schröder"
+      },
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4c/OT_Berlin_09-13_Thorsten_Schroeder.jpg",
+      "otherAnswers": [
+        {
+          "text": "Jens Riewa"
+        },
+        {
+          "text": "Jan Hofer"
+        },
+        {
+          "text": "Tim Berendonk"
+        },
+        {
+          "text": "Ralph Baudach"
+        }
+      ],
+      "text": "Dieser Sprecher ist seit 1999 bei der Tagesschau."
+    },
+    {
+      "correctAnswer": {
+        "text": "Susanne Daubner"
+      },
+      "imageUrl": "https://p5.focus.de/img/fotos/origs246398/1652424460-w800-h599-o-q75-p5/Medien-Tagesthemen-Sprecherin-Susanne-Daubner-wurde-durch-einen-Tonfehler-aus-dem-Konzept-gebracht.jpg",
+      "otherAnswers": [
+        {
+          "text": "Judith Rakers"
+        },
+        {
+          "text": "Linda Zervakis"
+        },
+        {
+          "text": "Karolin Kandler"
+        },
+        {
+          "text": "Susanne Holst"
+        }
+      ],
+      "text": "Diese Sprecherin ist seit 1999 bei der Tagesschau."
+    },
+    {
+      "correctAnswer": {
+        "text": "Jens Riewa"
+      },
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/48/Zimmer_frei_-_der_Abschied-2005a.jpg",
+      "otherAnswers": [
+        {
+          "text": "Thorsten Schröder"
+        },
+        {
+          "text": "Jan Hofer"
+        },
+        {
+          "text": "Tim Berendonk"
+        },
+        {
+          "text": "Ralph Baudach"
+        }
+      ],
+      "text": "Dieser Sprecher ist seit 1994 bei der Tagesschau."
+    },
+    {
+      "correctAnswer": {
+        "text": "Linda Zervakis"
+      },
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/04/Linda_Zervakis_02.jpg",
+      "otherAnswers": [
+        {
+          "text": "Judith Rakers"
+        },
+        {
+          "text": "Susanne Daubner"
+        },
+        {
+          "text": "Karolin Kandler"
+        },
+        {
+          "text": "Susanne Holst"
+        }
+      ],
+      "text": "Diese Sprecherin ist seit 2010 bei der Tagesschau."
+    },
+    {
+      "correctAnswer": {
+        "text": "Jan Hofer"
+      },
+      "imageUrl": "https://yt3.ggpht.com/a/AATXAJzVHIcXqEW0dUYB8fBVvM-B4B46avxnDex3p9R1Ag=s900-c-k-c0xffffffff-no-rj-mo",
+      "otherAnswers": [
+        {
+          "text": "Jens Riewa"
+        },
+        {
+          "text": "Thorsten Schröder"
+        },
+        {
+          "text": "Tim Berendonk"
+        },
+        {
+          "text": "Ralph Baudach"
+        }
+      ],
+      "text": "Welcher Sprecher ist seit 2004 Chefsprecher der Tagesschau?"
+    }
+  ]
+}
