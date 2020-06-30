@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import {Quiz} from '../../api/quiz';
 import {ApiService} from '../../services/api.service';
 import {Router} from '@angular/router';
 import {QuizTeaser} from '../../api/quiz-teaser';
+import {Quiz} from '../../api/quiz';
 
 @Component({
   selector: 'app-main',
